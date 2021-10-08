@@ -1,0 +1,132 @@
+@media (max-width : 81em) {
+  .home .max-width{
+    margin-left: 0;
+  }
+}
+@media (max-width : 69em) {
+  .about .about-content .left img{
+    width: 35rem;
+  }
+}
+@media (max-width : 62em) {
+  .max-width{
+    padding: 0 5rem;
+  }
+  .about .about-content .right p{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width : 60em) {
+    body.active{
+      overflow: hidden;
+    }
+    .navbar .menu-btn{
+      display: block;
+      z-index: 1000;
+    }
+    .menu-btn i.active::before{
+      content: '\f00d';
+    }
+    .navbar{
+      transition: all .4s ease;
+    }
+    .navbar .menu{
+      position: fixed;
+      height: 100vh;
+      min-width: 100%;
+      left: -100%;
+      top: 0;
+      background-color: #111;
+      text-align: center;
+      padding-top: 8rem;
+      transition: left .4s ease;
+    }
+    .navbar .menu.active{
+      left: 0;
+    }
+    .navbar .menu li.active{
+      left: 0;
+    }
+    .navbar .menu li {
+      position: relative;
+      left: -50%;
+      display: block;
+      transition: left .7s cubic-bezier(.02,.34,.96,1.64);
+    }
+    .navbar .menu li a{
+      display: inline-block;
+      margin: 2rem 0;
+      font-size: 2.5rem;
+    }
+    .home .home-content .text-2{
+      font-size: 7rem;
+    }
+    .home .home-content .text-3{
+      font-size: 3.5rem;
+    }
+    .home .home-content a{
+      font-size: 2.3rem;
+      padding: 1rem 3rem;
+    }
+    .max-width{
+      max-width: 80rem;
+    }
+    /* ************ */
+    .about .about-content .left{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 6rem;
+    }
+    .about .about-content .right .text{
+      font-size: 2rem;
+    }
+    .about .about-content .column,
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+      width: 100%;
+    }
+    .services .serv-content .card{
+      width: calc(50% - 1rem);
+      margin-bottom:1rem;
+    }
+    .skills .skills-content .left,
+    .contact .contact-content .left{
+      margin-bottom: 2.5rem;
+    }
+    
+}
+@media (max-width : 43em) {
+    .max-width{
+      padding: 0 2.3rem;
+    }
+    .home .home-content .text-2{
+      font-size: 6rem;
+    }
+    .home .home-content .text-3{
+      font-size: 3.2rem;
+    }
+    .home .home-content a{
+      font-size: 2rem;
+      padding: .8rem 2rem;
+    }
+}
+@media (max-width : 37em) {
+    .home .home-content .text-2{
+      font-size: 5rem;
+    }
+    .home .home-content .text-3{
+      font-size: 2.2rem;
+    }
+    .services .serv-content .card{
+      width: 100%;
+    }
+    .skills .skills-content .column{
+      width: 100%;
+    }
+    .skills .skills-content .left .text{
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+}
