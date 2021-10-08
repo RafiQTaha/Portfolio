@@ -331,6 +331,9 @@ section .title::before{
 .skills .skills-content .right .php::before{
   width: 85%;
 }
+.skills .skills-content .right .symfony::before{
+  width: 90%;
+}
 .skills .skills-content .right .sql::before{
   width: 80%;
 }
